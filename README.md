@@ -1,7 +1,7 @@
-## Website
+## Project Link
 
-See the project without install.
-Website Link: <https://nexfilx-clone.web.app/>
+You can try the project.
+Project Link: <https://nexfilx-clone.web.app/>
 
 # Netflix clone
 
@@ -15,7 +15,7 @@ Simple Netflix clone website.
 
 ## Description
 
-- Page is like this...
+- Project looks like this!
   <br/>
   <img src="./src/img/page.png" width="300">
 - If you click an image, it opens up a trailer that comes from youtube.
