@@ -18,7 +18,7 @@ Simple Netflix clone website.
 - Page is like this...
   <br/>
   <img src="./src/img/page.png" width="300">
-- If you click an image opens up a trailer that comes from youtube.
+- If you click an image, it opens up a trailer that comes from youtube.
   (If you click an image again it will close.)
   <br/>
   <img src="./src/img/trailer.png" width="300">
