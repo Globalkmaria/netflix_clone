@@ -18,12 +18,13 @@ Simple Netflix clone website.
 
 - Project looks like this!
   <br/>
-  <img src="./src/img/page.png" width="500">
+  <img src="./src/img/page.png" width="600">
 - If you click an image, it opens up a trailer that will come youtube.
   (If you click the image again you can close it.)
   <br/>
   <img src="./src/img/trailer.png" width="600">
 - Loading page
+  <br/>
   <img src="./src/img/loadingpage.png" width="600">
 
 ## Setup
