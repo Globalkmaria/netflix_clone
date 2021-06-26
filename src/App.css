@@ -3,4 +3,5 @@
 }
 .App{
   background: #111;
+  min-width: 500px;
 }

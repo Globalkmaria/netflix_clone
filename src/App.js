@@ -1,25 +1,50 @@
+import { useEffect, useState } from 'react';
 import './App.css';
-import Banner from './Banner';
-import Navbar from './Navbar';
-import requests from './request';
-import Row from './Row';
-
+import Banner from './components/Banner';
+import Loading from './components/Loading';
+import Navbar from './components/Navbar';
+import requests from './api/request';
+import Row from './components/Row';
 function App() {
+  const [loading, setloading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setloading(false);
+    }, 700);
+  }, []);
+
+  if (loading) return <Loading />;
   return (
     <div className="App">
       <Navbar />
       <Banner />
+      <Row title="Trending Now" isLargeRow fetchURL={requests.fetchTrending} />
       <Row
+        isLargeRow
         title="NETFLIX ORIGINALS"
         fetchURL={requests.fetchNetflixOriginals}
       />
-      <Row title="Trending Now" fetchURL={requests.fetchTrending} />
-      <Row title="Top Rated" fetchURL={requests.fetchTopRated} />
-      <Row title="Action Movies" fetchURL={requests.fetchActionMovies} />
-      <Row title="Comedy Movies" fetchURL={requests.fetchComedyMovies} />
-      <Row title="Horror Movies" fetchURL={requests.fetchNetflixOriginals} />
-      <Row title="Romance Movies" fetchURL={requests.fetchRomanceMovies} />
-      <Row title="Documentaries" fetchURL={requests.fetchDocumentariesMovies} />
+      <Row title="Top Rated" isLargeRow fetchURL={requests.fetchTopRated} />
+      <Row
+        title="Action Movies"
+        isLargeRow
+        fetchURL={requests.fetchActionMovies}
+      />
+      <Row
+        title="Comedy Movies"
+        isLargeRow
+        fetchURL={requests.fetchComedyMovies}
+      />
+      <Row
+        title="Horror Movies"
+        isLargeRow
+        fetchURL={requests.fetchNetflixOriginals}
+      />
+      <Row
+        title="Romance Movies"
+        isLargeRow
+        fetchURL={requests.fetchRomanceMovies}
+      />
     </div>
   );
 }

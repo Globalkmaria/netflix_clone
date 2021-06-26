@@ -10,16 +10,17 @@ Simple Netflix clone website.
 ## Technologies
 
 - React
-- CSS
+- Styled-components
 - Firebase
+- API(TMDb API)
 
 ## Description
 
 - Project looks like this!
   <br/>
   <img src="./src/img/page.png" width="300">
-- If you click an image, it opens up a trailer that comes from youtube.
-  (If you click an image again it will close.)
+- If you click an image, it opens up a trailer that will come youtube.
+  (If you click the image again you can close it.)
   <br/>
   <img src="./src/img/trailer.png" width="300">
 
